@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: "Permanent Marker", sans-serif,Arial, Helvetica, sans-serif;
+    background-color: #1F1F1F;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(recursosCss/Animacion-digital1024x641.webp);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url(recursosCss/Animacion-digital1024x641.webp), no-repeat center center fixed;
+    background-size: cover;
+}
+.tituloprinci{
+    position: absolute;
+    top: 20%;
+    left: 0;;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    flex-direction: column;
+    color: rgb(12, 221, 186);
+}
+.titulo{
+    font-size: 30px;
+    color: rgb(240, 75, 10);
+}
+.subtitulo{
+    font-size: 25px;
+    color: rgb(240, 75, 10);
+}
+.text{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.imagen{
+    display: flex;
+}
+.imagen-1{
+    background-image: url(recursosCss/deadpool.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.enlace{
+        width: 50%;
+        padding: 100px 50px 90px 50px;
+        background-color: black;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 50% 50%  ;
+    grid-template-areas:
+    "h ."
+    "f d"
+    "w e"
+    "r s"
+    "t o"
+    "q i"
+    "m u"
+    "z b"
+    "n ."
+    /*punto es vacio*/
+    /*area de 4*4 "1 2 3 4"*/
+    ;
+
+}
+.intro{
+    position: absolute;
+    top: 20%;
+    left: 500;;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    flex-direction: column;
+}
+.inicio{
+    grid-area: h;
+    grid-column: 1/3;
+}
+.modelo{
+    grid-area: f;
+    background-color: rgb(15, 0, 0);
+}
+.modeloImagen{
+    grid-area: d;
+    background-color: rgb(15, 0, 0);
+}
+.textura{
+    grid-area: e;
+    background-color: rgba(22, 13, 0, 0.751);
+}
+.texturaImagen{
+    grid-area: w;
+    background-color: rgba(22, 13, 0, 0.751);
+}
+
+.animacion{
+    grid-area: r;
+    background-color: rgba(19, 22, 0, 0.751);
+}
+.animacionImagen{
+
+    grid-area: s;
+    background-color: rgba(19, 22, 0, 0.751);
+}
+.sculpting{
+    grid-area: o;
+    background-color: rgba(0, 16, 14, 0.751);
+    
+}
+.sculptingImagen{
+
+    grid-area: t;
+    background-color: rgba(0, 16, 14, 0.751);
+}
+.simulation{
+    grid-area: q;
+    background-color: rgba(0, 1, 17, 0.751);
+    
+}
+.simulationImagen{
+
+    grid-area: i;
+    background-color: rgba(0, 1, 17, 0.751);
+}
+.renderizado{
+    grid-area: u;
+    background-color: rgba(17, 0, 15, 0.751);
+    
+}
+.renderizadoImagen{
+
+    grid-area: m;
+    background-color: rgba(17, 0, 15, 0.751);
+}
+.pipeline{
+    grid-area: z;
+    background-color: rgba(17, 0, 3, 0.751);
+    
+}
+.pipelineImagen{
+
+    grid-area: b;
+    background-color: rgba(17, 0, 3, 0.751);
+}
+.final{
+    grid-area: n;
+    grid-column: 1/3;
+    background-color: rgba(0, 0, 0, 0.751);
+}
